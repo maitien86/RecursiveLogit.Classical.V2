@@ -3,8 +3,9 @@
 global nbobs;
 global resultsTXT;
 global Op;
-fprintf('\n Getting analytical Hessian ....\n');
-Hessian = getHessian();
+fprintf('\n Getting Hessian ....\n');
+%Hessian = getHessian();
+Hessian = getFiniteHessian();
 InvH = inv(Hessian);
 CoV = (InvH * BHHH() * InvH)/nbobs;
 resultsTXT = [resultsTXT sprintf('\n Hessian is: \n') sprintf([repmat('%f\t', 1, size(Hessian, 2)) '\n'], Hessian')];
