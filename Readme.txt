@@ -3,7 +3,7 @@ Recursive route choice model estimation
 Updated 16 June 2016
 Mai Anh Tien - Cerc-Datascience, Polytechnique Montreal
 ------------------------------------------------------------
-! Minors changes in order to make the code easier to use with observation-specific attributes
+! Minor changes to make the code easier to use with observation-specific attributes
 ! Files changed:
     - loadData.m
     - getAtt.m
